@@ -2,9 +2,9 @@ name: coinTalk chatRoom server CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test ]
   pull_request:
-    branches: [ main ]
+    branches: [ test ]
 
 env:
   S3_BUCKET_NAME: tests2212
