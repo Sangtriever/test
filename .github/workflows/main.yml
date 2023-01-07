@@ -69,6 +69,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         aws deploy create-deployment 
+        aws elasticbeanstalk create-application
         --application-name sangtriever
         --deployment-group-name sangtriever-group
         --file-exists-behavior OVERWRITE 
